@@ -25,6 +25,10 @@ def ehyd_parser():
                         help='save the data to the current directory',
                         required=False, action='store_true')
 
+    parser.add_argument('--to_ixx',
+                        help='save the data to the current directory (using ixx format)',
+                        required=False, action='store_true')
+
     parser.add_argument('--to_parquet',
                         help='save the data to the current directory',
                         required=False, action='store_true')

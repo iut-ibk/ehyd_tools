@@ -57,6 +57,9 @@ def export_series(series, filename, export_path=None, save_as='csv', unix=False)
     if save_as is 'csv':
         series.to_csv(fn, **csv_args(unix))
 
+    if save_as is 'ixx':
+        series.to_csv(fn, date_format='%d.%m.%Y %H:%M:%S', sep='\t')
+
     elif save_as is 'parquet':
         series.to_frame().to_parquet(fn)
 

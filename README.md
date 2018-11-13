@@ -48,8 +48,8 @@ Unix-Like:
 
 ```
 usage: ehyd_tools [-h] [-id ID] [--input INPUT] [--add_gaps] [--to_csv]
-                  [--to_parquet] [--max10a] [--start START] [--end END]
-                  [--plot] [--statistics] [--meta] [--unix]
+                  [--to_ixx] [--to_parquet] [--max10a] [--start START]
+                  [--end END] [--plot] [--statistics] [--meta] [--unix]
 
 optional arguments:
   -h, --help     show this help message and exit
@@ -57,6 +57,7 @@ optional arguments:
   --input INPUT  path to the rain input file including the filename
   --add_gaps     get the gaps in the series as a csv table
   --to_csv       save the data to the current directory
+  --to_ixx       save the data to the current directory (using ixx format)
   --to_parquet   save the data to the current directory
   --max10a       consider only 10 years with the most availability
   --start START  custom start time, Format="YYYY-MM-DD"

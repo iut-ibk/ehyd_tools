@@ -138,6 +138,11 @@ def execute_tool():
         print('The time series was saved in the file "{}".'.format(out_fn))
 
     # __________________________________________________________________________________________________________________
+    if args.to_ixx:
+        out_fn = export_series(series, filename=name, save_as='ixx', unix=args.unix)
+        print('The time series was saved in the file "{}".'.format(out_fn))
+
+    # __________________________________________________________________________________________________________________
     if args.to_parquet:
         out_fn = export_series(series, filename=name, save_as='parquet')
         print('The time series was saved in the file "{}".'.format(out_fn))
